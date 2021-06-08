@@ -4,7 +4,10 @@ const bodyParser = require('koa-bodyparser')
 const koaLogger = require('koa-logger')
 const path = require('path')
 
+const FaceDetect = require('./lib/detect')
+
 const app = new Koa()
+const faceDetect = new FaceDetect()
 
 app.use(koaLogger())
 app.use(koaBody({
@@ -19,7 +22,8 @@ app.use(async (ctx, next) => {
   try {
     if (ctx.request.path === '/upload' && ctx.request.method === 'POST') {
       const { file } = ctx.request.files
-      ctx.body = { path: file.path }
+      const result = await faceDetect.run(file)
+      ctx.body = result
       await next()
     } else {
       ctx.body = {
