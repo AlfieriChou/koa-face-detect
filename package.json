@@ -37,6 +37,8 @@
     "standard-version": "^9.3.0"
   },
   "dependencies": {
+    "@tensorflow/tfjs-node": "^3.7.0",
+    "@vladmandic/face-api": "^1.2.5",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
