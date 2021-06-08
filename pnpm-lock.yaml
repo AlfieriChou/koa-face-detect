@@ -6,6 +6,7 @@ specifiers:
   '@tensorflow/tfjs': ^3.7.0
   '@tensorflow/tfjs-node': ^3.7.0
   '@tensorflow/tfjs-node-gpu': ^3.7.0
+  '@vladmandic/face-api': ^1.2.5
   canvas: ^2.8.0
   eslint: ^7.28.0
   eslint-config-standard-airbnb-base: ^1.0.3
@@ -25,6 +26,7 @@ dependencies:
   '@tensorflow/tfjs': 3.7.0
   '@tensorflow/tfjs-node': 3.7.0
   '@tensorflow/tfjs-node-gpu': 3.7.0
+  '@vladmandic/face-api': 1.2.5
   canvas: 2.8.0
   face-api.js: 0.22.2
   koa: 2.13.1
@@ -523,6 +525,11 @@ packages:
 
   /@types/webgl2/0.0.5:
     resolution: {integrity: sha512-oGaKsBbxQOY5+aJFV3KECDhGaXt+yZJt2y/OZsnQGLRkH6Fvr7rv4pCt3SRH1somIHfej/c4u7NSpCyd9x+1Ow==}
+    dev: false
+
+  /@vladmandic/face-api/1.2.5:
+    resolution: {integrity: sha512-0pbjqjSvlXVtYUifPxzWIbbc9RiTEFVaw5ILocUVePR8myi+Gq2ssLI81esN5mEbwSQCXkrZKzupdGO79us3tQ==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /JSONStream/1.3.5:
