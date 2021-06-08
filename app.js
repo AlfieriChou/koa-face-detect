@@ -14,8 +14,8 @@ app.use(bodyParser())
 app.use(async (ctx, next) => {
   try {
     if (ctx.request.path === '/run' && ctx.request.method === 'POST') {
-      await faceDetect.run()
-      ctx.body = { }
+      const ret = await faceDetect.run()
+      ctx.body = ret
       await next()
     } else {
       ctx.body = {
