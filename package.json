@@ -1,0 +1,45 @@
+{
+  "name": "koa-face-detect",
+  "version": "0.0.0",
+  "description": "face detection",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlfieriChou/koa-face-detect.git"
+  },
+  "keywords": [
+    "face",
+    "detect",
+    "koa"
+  ],
+  "author": "AlfieriChou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlfieriChou/koa-face-detect/issues"
+  },
+  "homepage": "https://github.com/AlfieriChou/koa-face-detect#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "eslint": "^7.28.0",
+    "eslint-config-standard-airbnb-base": "^1.0.3",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-json": "^3.0.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.7",
+    "standard-version": "^9.3.0"
+  },
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-logger": "^3.2.1"
+  }
+}
