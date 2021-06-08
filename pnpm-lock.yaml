@@ -4,6 +4,7 @@ specifiers:
   '@commitlint/cli': ^12.1.4
   '@commitlint/config-conventional': ^12.1.4
   '@tensorflow/tfjs': ^3.7.0
+  '@tensorflow/tfjs-node': ^3.7.0
   '@tensorflow/tfjs-node-gpu': ^3.7.0
   canvas: ^2.8.0
   eslint: ^7.28.0
@@ -22,6 +23,7 @@ specifiers:
 
 dependencies:
   '@tensorflow/tfjs': 3.7.0
+  '@tensorflow/tfjs-node': 3.7.0
   '@tensorflow/tfjs-node-gpu': 3.7.0
   canvas: 2.8.0
   face-api.js: 0.22.2
@@ -413,6 +415,24 @@ packages:
 
   /@tensorflow/tfjs-node-gpu/3.7.0:
     resolution: {integrity: sha512-kDZkY6Xh7+mZIEhnRYEncCrEzpEex5pSR2jOYr28c4KlpkTLN2IkeSynvAo3Il9Bn2dTm5rsjX21nw1aehPg9w==}
+    engines: {node: '>=8.11.0'}
+    requiresBuild: true
+    dependencies:
+      '@mapbox/node-pre-gyp': 1.0.4
+      '@tensorflow/tfjs': 3.7.0
+      adm-zip: 0.4.16
+      google-protobuf: 3.17.2
+      https-proxy-agent: 2.2.4
+      progress: 2.0.3
+      rimraf: 2.7.1
+      tar: 4.4.13
+    transitivePeerDependencies:
+      - seedrandom
+      - supports-color
+    dev: false
+
+  /@tensorflow/tfjs-node/3.7.0:
+    resolution: {integrity: sha512-vVK9bDci0D/JKFEKcUWk7U4UbrTW7n3l+G06467YybWXd++v+PGGjSf7EvZ0X4JcYUTdqfPhQwfrbLU1e1C4QQ==}
     engines: {node: '>=8.11.0'}
     requiresBuild: true
     dependencies:
