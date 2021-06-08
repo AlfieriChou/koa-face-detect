@@ -3,16 +3,13 @@ lockfileVersion: 5.3
 specifiers:
   '@commitlint/cli': ^12.1.4
   '@commitlint/config-conventional': ^12.1.4
-  '@tensorflow/tfjs': ^3.7.0
   '@tensorflow/tfjs-node': ^3.7.0
-  '@tensorflow/tfjs-node-gpu': ^3.7.0
   '@vladmandic/face-api': ^1.2.5
   canvas: ^2.8.0
   eslint: ^7.28.0
   eslint-config-standard-airbnb-base: ^1.0.3
   eslint-friendly-formatter: ^4.0.1
   eslint-plugin-json: ^3.0.0
-  face-api.js: ^0.22.2
   husky: ^6.0.0
   koa: ^2.13.1
   koa-body: ^4.2.0
@@ -23,12 +20,9 @@ specifiers:
   standard-version: ^9.3.0
 
 dependencies:
-  '@tensorflow/tfjs': 3.7.0
   '@tensorflow/tfjs-node': 3.7.0
-  '@tensorflow/tfjs-node-gpu': 3.7.0
-  '@vladmandic/face-api': 1.2.5
+  '@vladmandic/face-api': 1.3.1
   canvas: 2.8.0
-  face-api.js: 0.22.2
   koa: 2.13.1
   koa-body: 4.2.0
   koa-bodyparser: 4.3.0
@@ -371,18 +365,6 @@ packages:
       '@tensorflow/tfjs-core': 3.7.0
     dev: false
 
-  /@tensorflow/tfjs-core/1.7.0:
-    resolution: {integrity: sha512-uwQdiklNjqBnHPeseOdG0sGxrI3+d6lybaKu2+ou3ajVeKdPEwpWbgqA6iHjq1iylnOGkgkbbnQ6r2lwkiIIHw==}
-    engines: {yarn: '>= 1.3.2'}
-    dependencies:
-      '@types/offscreencanvas': 2019.3.0
-      '@types/seedrandom': 2.4.27
-      '@types/webgl-ext': 0.0.30
-      '@types/webgl2': 0.0.4
-      node-fetch: 2.1.2
-      seedrandom: 2.4.3
-    dev: false
-
   /@tensorflow/tfjs-core/3.7.0:
     resolution: {integrity: sha512-wG5d/oyjU9WC7E9ZhHxVyRyg/OTjwfbpBzjfRMCa93nxDTCTqf4h6ZHYsNHQ4NOP9yCltBnKIXOWk5aiy+oY1Q==}
     engines: {yarn: '>= 1.3.2'}
@@ -413,24 +395,6 @@ packages:
       '@tensorflow/tfjs-core': 3.7.0
     dependencies:
       '@tensorflow/tfjs-core': 3.7.0
-    dev: false
-
-  /@tensorflow/tfjs-node-gpu/3.7.0:
-    resolution: {integrity: sha512-kDZkY6Xh7+mZIEhnRYEncCrEzpEex5pSR2jOYr28c4KlpkTLN2IkeSynvAo3Il9Bn2dTm5rsjX21nw1aehPg9w==}
-    engines: {node: '>=8.11.0'}
-    requiresBuild: true
-    dependencies:
-      '@mapbox/node-pre-gyp': 1.0.4
-      '@tensorflow/tfjs': 3.7.0
-      adm-zip: 0.4.16
-      google-protobuf: 3.17.2
-      https-proxy-agent: 2.2.4
-      progress: 2.0.3
-      rimraf: 2.7.1
-      tar: 4.4.13
-    transitivePeerDependencies:
-      - seedrandom
-      - supports-color
     dev: false
 
   /@tensorflow/tfjs-node/3.7.0:
@@ -519,16 +483,12 @@ packages:
     resolution: {integrity: sha512-LKVgNmBxN0BbljJrVUwkxwRYqzsAEPcZOe6S2T6ZaBDIrFp0qu4FNlpc5sM1tGbXUYFgdVQIoeLk1Y1UoblyEg==}
     dev: false
 
-  /@types/webgl2/0.0.4:
-    resolution: {integrity: sha512-PACt1xdErJbMUOUweSrbVM7gSIYm1vTncW2hF6Os/EeWi6TXYAYMPp+8v6rzHmypE5gHrxaxZNXgMkJVIdZpHw==}
-    dev: false
-
   /@types/webgl2/0.0.5:
     resolution: {integrity: sha512-oGaKsBbxQOY5+aJFV3KECDhGaXt+yZJt2y/OZsnQGLRkH6Fvr7rv4pCt3SRH1somIHfej/c4u7NSpCyd9x+1Ow==}
     dev: false
 
-  /@vladmandic/face-api/1.2.5:
-    resolution: {integrity: sha512-0pbjqjSvlXVtYUifPxzWIbbc9RiTEFVaw5ILocUVePR8myi+Gq2ssLI81esN5mEbwSQCXkrZKzupdGO79us3tQ==}
+  /@vladmandic/face-api/1.3.1:
+    resolution: {integrity: sha512-DjFTh/UgeyfIbuQjmBQH4xk2EsMuiqab2SErUYDgeDjzI3Fbh85e2KpQAnGO50lYRx/dOSRQLn9Ujj1aGn8kFg==}
     engines: {node: '>=12.0.0'}
     dev: false
 
@@ -1853,13 +1813,6 @@ packages:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
     dev: true
 
-  /face-api.js/0.22.2:
-    resolution: {integrity: sha512-9Bbv/yaBRTKCXjiDqzryeKhYxmgSjJ7ukvOvEBy6krA0Ah/vNBlsf7iBNfJljWiPA8Tys1/MnB3lyP2Hfmsuyw==}
-    dependencies:
-      '@tensorflow/tfjs-core': 1.7.0
-      tslib: 1.14.1
-    dev: false
-
   /fast-deep-equal/3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
     dev: true
@@ -3093,11 +3046,6 @@ packages:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
 
-  /node-fetch/2.1.2:
-    resolution: {integrity: sha1-q4hOjn5X44qUR1POxwb3iNF2i7U=}
-    engines: {node: 4.x || >=6.0.0}
-    dev: false
-
   /node-fetch/2.6.1:
     resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
     engines: {node: 4.x || >=6.0.0}
@@ -4230,6 +4178,7 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
+    dev: true
 
   /tsscmp/1.0.6:
     resolution: {integrity: sha512-LxhtAkPDTkVCMQjt2h6eBVY28KCjikZqZfMcC15YBeNjkgUpdCfBu5HoiOTDu86v6smE8yOjyEktJ8hlbANHQA==}

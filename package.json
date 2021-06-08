@@ -37,12 +37,9 @@
     "standard-version": "^9.3.0"
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^3.7.0",
     "@tensorflow/tfjs-node": "^3.7.0",
-    "@tensorflow/tfjs-node-gpu": "^3.7.0",
     "@vladmandic/face-api": "^1.2.5",
     "canvas": "^2.8.0",
-    "face-api.js": "^0.22.2",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",
     "koa-bodyparser": "^4.3.0",
