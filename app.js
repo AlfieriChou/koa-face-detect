@@ -22,8 +22,8 @@ app.use(async (ctx, next) => {
   try {
     if (ctx.request.path === '/upload' && ctx.request.method === 'POST') {
       const { file } = ctx.request.files
-      const result = await faceDetect.run(file)
-      ctx.body = result
+      await faceDetect.run(file)
+      ctx.body = { }
       await next()
     } else {
       ctx.body = {
