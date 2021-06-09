@@ -2,24 +2,21 @@ const Koa = require('koa')
 const koaBody = require('koa-body')
 const bodyParser = require('koa-bodyparser')
 const koaLogger = require('koa-logger')
-const path = require('path')
+
+const FaceDetect = require('./lib/detect')
 
 const app = new Koa()
+const faceDetect = new FaceDetect()
 
 app.use(koaLogger())
-app.use(koaBody({
-  multipart: true,
-  formidable: {
-    uploadDir: path.join(__dirname, './'),
-    keepExtensions: true
-  }
-}))
+app.use(koaBody({}))
 app.use(bodyParser())
 app.use(async (ctx, next) => {
   try {
-    if (ctx.request.path === '/upload' && ctx.request.method === 'POST') {
-      const { file } = ctx.request.files
-      ctx.body = { path: file.path }
+    if (ctx.request.path === '/run' && ctx.request.method === 'POST') {
+      const { url } = ctx.request.body
+      const ret = await faceDetect.run(url)
+      ctx.body = ret
       await next()
     } else {
       ctx.body = {
@@ -30,7 +27,8 @@ app.use(async (ctx, next) => {
   } catch (err) {
     ctx.body = {
       code: 400,
-      message: err.message
+      message: err.message,
+      stack: err.stack
     }
   }
 })
