@@ -13,15 +13,19 @@ app.use(koaBody({}))
 app.use(bodyParser())
 app.use(async (ctx, next) => {
   try {
-    if (ctx.request.path === '/run' && ctx.request.method === 'POST') {
+    if (ctx.request.path === '/faceDetection/image' && ctx.request.method === 'POST') {
       const { url } = ctx.request.body
       const ret = await faceDetect.run(url)
-      ctx.body = ret
+      ctx.body = {
+        code: 0,
+        message: 'OK',
+        result: ret
+      }
       await next()
     } else {
       ctx.body = {
         code: 0,
-        message: ''
+        message: 'OK'
       }
     }
   } catch (err) {
